@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">W1WENavigationDrawer</string>
+    <string name="item_1">About us...</string>
+    <string name="item_3">Item 3</string>
+    <string name="item_2">Item 2</string>
+    <string name="avatar_person">avatar person</string>
+    <string name="luis_aguirre">Luis Aguirre</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="calculator">Calculator</string>
+    <string name="webview">Internal browser</string>
+    <string name="sent_mail">Item 3</string>
+    <string name="drafts">Item 4</string>
+    <string name="subheader">Item 5</string>
+    <string name="all_mail">Item 6</string>
+    <string name="trash">Item 7</string>
+    <string name="spam">Item 8</string>
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+
+    <!--Calculator-->
+    <string name="button_name">Button1</string>
+    <string name="_0">0</string>
+    <string name="ac">AC</string>
+    <string name="plusminus">+/-</string>
+    <string name="percentage">%</string>
+    <string name="div">/</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="x">x</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="dash">-</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="plus">+</string>
+    <string name="dot">.</string>
+    <string name="equal">=</string>
+    <string name="please_input_value">Enter URL</string>
+    <string name="go">Go</string>
+
+</resources>
