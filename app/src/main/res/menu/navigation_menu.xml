@@ -3,24 +3,24 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/inbox_id"
+            android:id="@+id/calculator_id"
             android:icon="@drawable/inbox"
             android:title="@string/calculator"/>
 
         <item
-            android:id="@+id/starred_id"
+            android:id="@+id/webview_id"
             android:icon="@drawable/starred"
             android:title="@string/webview"/>
 
         <item
-            android:id="@+id/sent_id"
+            android:id="@+id/pdf_viewer"
             android:icon="@drawable/sent"
-            android:title="@string/sent_mail"/>
+            android:title="@string/pdf_viewer"/>
 
         <item
-            android:id="@+id/drafts_id"
+            android:id="@+id/mediaplayer_id"
             android:icon="@drawable/drafts"
-            android:title="@string/drafts"/>
+            android:title="@string/media_player"/>
     </group>
 
     <item android:title="@string/subheader">

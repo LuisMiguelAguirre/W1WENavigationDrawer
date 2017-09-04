@@ -3,7 +3,7 @@
           package="com.example.admin.w1wenavigationdrawer">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -32,6 +32,16 @@
         <activity
             android:name=".WebViewActivity"
             android:theme="@style/AppTheme.ActionBar">
+        </activity>
+        <activity
+            android:name=".PDFActivity"
+            android:theme="@style/AppTheme.ActionBar">
+            >
+        </activity>
+        <activity
+            android:name=".MediaPlayerActivity"
+            android:theme="@style/AppTheme.ActionBar">
+            >
         </activity>
     </application>
 

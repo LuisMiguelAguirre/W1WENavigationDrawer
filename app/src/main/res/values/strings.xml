@@ -40,5 +40,11 @@
     <string name="equal">=</string>
     <string name="please_input_value">Enter URL</string>
     <string name="go">Go</string>
+    <string name="pdf_viewer">PDF Viewer</string>
+    <string name="back"><![CDATA[>]]></string>
+    <string name="rewind"><![CDATA[<<]]></string>
+    <string name="forward"><![CDATA[>>]]></string>
+    <string name="pause">||</string>
+    <string name="media_player">Media Player</string>
 
 </resources>

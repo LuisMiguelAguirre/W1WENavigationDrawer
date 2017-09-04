@@ -12,7 +12,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -143,33 +142,37 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Intent intent;
         switch (id){
 
-            case R.id.inbox_id:
+            case R.id.calculator_id:
                 intent = new Intent(this, CalculatorActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
-                Toast.makeText(getApplicationContext(),"Calculator open",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Calculator",Toast.LENGTH_LONG).show();
 
                 break;
 
 
-            case R.id.starred_id:
+            case R.id.webview_id:
                 intent = new Intent(this, WebViewActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
-                Toast.makeText(getApplicationContext(),"starred",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"WebView",Toast.LENGTH_LONG).show();
 
                 break;
 
 
-            case R.id.sent_id:
-
-                Toast.makeText(getApplicationContext(),"sent mail",Toast.LENGTH_LONG).show();
+            case R.id.pdf_viewer:
+                intent = new Intent(this, PDFActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                Toast.makeText(getApplicationContext(),"PDF Viewer",Toast.LENGTH_LONG).show();
 
                 break;
 
 
-            case R.id.drafts_id:
-
+            case R.id.mediaplayer_id:
+                intent = new Intent(this, MediaPlayerActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
                 Toast.makeText(getApplicationContext(),"drafts",Toast.LENGTH_LONG).show();
 
                 break;

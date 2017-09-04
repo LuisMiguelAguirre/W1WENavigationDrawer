@@ -20,14 +20,14 @@
     </android.support.v7.widget.Toolbar>
 
     <android.support.v4.view.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/viewPager_id"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
         android:layout_below="@id/toolbar"
-        android:layout_marginTop="48dp"
-
-        >
+        android:background="@color/colorAccent" >
     </android.support.v4.view.ViewPager>
+
+    <!--android:layout_marginTop="48dp"-->
 
     <me.relex.circleindicator.CircleIndicator
         android:layout_width="match_parent"
@@ -38,15 +38,8 @@
 
     </me.relex.circleindicator.CircleIndicator>
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="17dp"
-        android:layout_marginTop="17dp"
 
-        app:srcCompat="@drawable/mobile_app_company_partners"/>
+
+
 
 </RelativeLayout>

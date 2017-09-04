@@ -1,7 +1,6 @@
 package com.example.admin.w1wenavigationdrawer;
 
 import android.content.Context;
-import android.support.v4.view.LayoutInflaterCompat;
 import android.support.v4.view.PagerAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,7 +15,10 @@ public class SlideShowAdapter extends PagerAdapter {
 
     public int[] images = {
             R.drawable.image1,
-            R.drawable.image2};
+            R.drawable.image2,
+            R.drawable.image3,
+            R.drawable.image4,
+            R.drawable.image5};
 
     public SlideShowAdapter(Context context) {
         mContext = context;
