@@ -128,6 +128,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.search_id:
                 Toast.makeText(getApplicationContext(), "Search icon is selected", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(this, SearchViewActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
                 break;
             case R.id.car_id:
                 Toast.makeText(getApplicationContext(), "Car icon is selected", Toast.LENGTH_SHORT).show();

@@ -43,7 +43,8 @@
             android:theme="@style/AppTheme.ActionBar">
             >
         </activity>
-
+        <activity android:name=".SearchViewActivity">
+        </activity>
     </application>
 
 </manifest>
