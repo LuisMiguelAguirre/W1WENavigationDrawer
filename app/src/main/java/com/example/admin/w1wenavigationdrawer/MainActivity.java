@@ -12,12 +12,22 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.PopupMenu;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.RatingBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import me.relex.circleindicator.CircleIndicator;
+
+import static com.example.admin.w1wenavigationdrawer.R.id.ratingBar;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -27,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     SlideShowAdapter mAdapter;
     ViewPager mViewPager;
     CircleIndicator mCircleIndicator;
+    RatingBar ratingBar;
 
 
     @Override
@@ -65,6 +76,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, mDrawerLayout, mToolbar, R.string.open_drawer, R.string.close_drawer);
         mDrawerLayout.setDrawerListener(toggle);
         toggle.syncState();
+
+        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+        MyCityAdapter adapter = new MyCityAdapter(this, CityModel.getObjectList());
+        recyclerView.setAdapter(adapter);
+
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this);
+        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        recyclerView.setLayoutManager(layoutManager);
+
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView_2);
+        MyObjectAdapter adapter2 = new MyObjectAdapter(this, ObjectModel.getObjectList());
+        recyclerView.setAdapter(adapter2);
+
+        layoutManager = new LinearLayoutManager(this);
+        layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        recyclerView.setLayoutManager(layoutManager);
+
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
+
+
+
+     //   addListenerOnRatingBar();
+
+
     }
 
     @Override
@@ -206,6 +243,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
+
+    public void showPopup(View v) {
+        aboutApp();
+        /*PopupMenu popup = new PopupMenu(this, v);
+        MenuInflater inflater = popup.getMenuInflater();
+        inflater.inflate(R.menu.menu_main, popup.getMenu());
+        popup.show();*/
+    }
+
+    public void addListenerOnRatingBar() {
+
+        ratingBar = (RatingBar) findViewById(R.id.ratingBar);
+
+        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+            public void onRatingChanged(RatingBar ratingBar, float rating,
+                                        boolean fromUser) {
+
+            }
+        });
+    }
 
 }
 

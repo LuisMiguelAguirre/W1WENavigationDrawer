@@ -43,6 +43,7 @@
             android:theme="@style/AppTheme.ActionBar">
             >
         </activity>
+
     </application>
 
 </manifest>
