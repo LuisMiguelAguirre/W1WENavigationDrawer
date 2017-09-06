@@ -4,15 +4,15 @@
 
     <item
         android:id="@+id/item1_id"
-        android:title="@string/item_1"></item>
+        android:title="Date and Time"></item>
 
     <item
         android:id="@+id/item2_id"
-        android:title="@string/item_2"></item>
+        android:title="Location"></item>
 
     <item
         android:id="@+id/item3_id"
-        android:title="@string/item_3"></item>
+        android:title="Sleep"></item>
 
     <item
         android:id="@+id/search_id"

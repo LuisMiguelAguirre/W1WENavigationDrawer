@@ -3,6 +3,7 @@ package com.example.admin.w1wenavigationdrawer;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -117,14 +118,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (id) {
             case R.id.item1_id:
-                aboutApp();
-                //Toast.makeText(getApplicationContext(), "Item 1 is selected", Toast.LENGTH_SHORT).show();
+                //aboutApp();
+                Toast.makeText(getApplicationContext(), "Settings is selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Settings.ACTION_DATE_SETTINGS));
                 break;
             case R.id.item2_id:
-                Toast.makeText(getApplicationContext(), "Item 2 is selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Settings.ACTION_LOCALE_SETTINGS));
+                Toast.makeText(getApplicationContext(), "Location is selected", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.item3_id:
-                Toast.makeText(getApplicationContext(), "Item 3 is selected", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(Settings.ACTION_SOUND_SETTINGS));
+                Toast.makeText(getApplicationContext(), "Sound is selected", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.search_id:
                 Toast.makeText(getApplicationContext(), "Search icon is selected", Toast.LENGTH_SHORT).show();
@@ -213,12 +217,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 intent = new Intent(this, MediaPlayerActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
-                Toast.makeText(getApplicationContext(),"drafts",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Media player",Toast.LENGTH_LONG).show();
 
                 break;
 
 
             case R.id.allmail_id:
+
+                startActivity(new Intent(Settings.ACTION_BATTERY_SAVER_SETTINGS));
 
                 Toast.makeText(getApplicationContext(),"all mail",Toast.LENGTH_LONG).show();
 
@@ -226,15 +232,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
             case R.id.trash_id:
+                startActivity(new Intent(Settings.ACTION_DEVICE_INFO_SETTINGS));
 
-                Toast.makeText(getApplicationContext(),"trash",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"About device",Toast.LENGTH_LONG).show();
 
                 break;
 
 
             case R.id.spam_id:
+                startActivity(new Intent(Settings.ACTION_NETWORK_OPERATOR_SETTINGS));
 
-                Toast.makeText(getApplicationContext(),"spam",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(),"Network operator",Toast.LENGTH_LONG).show();
 
                 break;
 

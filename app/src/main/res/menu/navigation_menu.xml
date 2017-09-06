@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/calculator_id"
-            android:icon="@drawable/inbox"
+            android:icon="@drawable/calculator"
             android:title="@string/calculator"/>
 
         <item
@@ -14,34 +15,34 @@
 
         <item
             android:id="@+id/pdf_viewer"
-            android:icon="@drawable/sent"
+            android:icon="@drawable/pdf"
             android:title="@string/pdf_viewer"/>
 
         <item
             android:id="@+id/mediaplayer_id"
-            android:icon="@drawable/drafts"
+            android:icon="@drawable/music"
             android:title="@string/media_player"/>
     </group>
 
-    <item android:title="@string/subheader">
+    <item android:title= "More settings">
 
 
         <menu>
 
             <item
                 android:id="@+id/allmail_id"
-                android:icon="@drawable/allmail"
-                android:title="@string/all_mail"/>
+                android:icon="@drawable/battery"
+                android:title="Battery"/>
 
             <item
                 android:id="@+id/trash_id"
-                android:icon="@drawable/trash"
-                android:title="@string/trash"/>
+                android:icon="@drawable/informations"
+                android:title="Information"/>
 
             <item
                 android:id="@+id/spam_id"
-                android:icon="@drawable/spam"
-                android:title="@string/spam"/>
+                android:icon="@drawable/network"
+                android:title="Network"/>
 
         </menu>
 
